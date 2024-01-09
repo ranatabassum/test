@@ -1,0 +1,64 @@
+BFF 2.0 - Merging BFF and GG components
+Rakuma-Rakuten wants to make Ichiba users visit the new page and encourage to sell their belongings through Rakuma within rakuten group.
+DDD - display clear delivery information on front-end services based on estimated total lead time
+DealRanking for JS- Display variant specific price and point for the SKU item
+Checkout Revamp- Instead of the current Basket API, CO will split feaures into 
+- CartX API
+- OrderCreation API
+
+PIC: Project Information Co-Ordinator 
+
+JIchiba is GG
+
+itemxV2
+interfaceKey: Using this interfaceKey, the gateway will understand with which upstream(backend) API it needs to initiate communication with.
+headerParameters: 
+         X-Client-Id
+urlParameters: 
+         shopId
+         itemId
+         manageNumber
+** Either "shopid & itemId" or "shopId & manageNumber" combination is require
+metaParameters: 
+         displayHiddenItem
+         displayDraftItem
+         identicalVariantsKey
+         identicalVariantsExcludeHidden
+
+
+
+
+Response:
+        shopId
+        manageNumber
+        itemId
+        itemType
+        itemNumber
+        title
+        tagline
+        productDescription
+        salesDescription
+        precautions
+        images
+        whiteBgImage	
+        video
+        rCategoryId
+        tags
+        governanceFields
+        draftItem
+        hideItem
+        unlimitedInventoryFlag
+        customizationOptions
+        releaseDate
+        subscription
+        buyingClub
+        features
+        payment
+        pointCampaign
+        variants
+        identicalVariants
+        displayPrice
+        taxInclusiveLabel
+        created
+        updated
+  
